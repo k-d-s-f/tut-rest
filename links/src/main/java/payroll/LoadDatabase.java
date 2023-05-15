@@ -16,7 +16,7 @@ class LoadDatabase {
 
 		return args -> {
 			employeeRepository.save(new Employee("First", "Second", "Third"));
-			employeeRepository.save(new Employee("Second", "Baggins", "thief"));
+			employeeRepository.save(new Employee("First", "Baggins", "thief"));
 
 			employeeRepository.findAll().forEach(employee -> log.info("Preloaded " + employee));
 

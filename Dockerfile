@@ -1,7 +1,9 @@
 FROM eclipse-temurin:17-jre-alpine
 
-RUN addgroup -S rest && adduser -S rest -G rest
-USER rest
+# RUN addgroup -S 100 && adduser -S 100 -G 100
+# RUN touch /var/log/spring.log
+# RUN chown 100:100 /var/log/spring.log
+# USER rest
 
 EXPOSE 8080
 VOLUME /tmp

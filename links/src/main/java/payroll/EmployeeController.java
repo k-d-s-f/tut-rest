@@ -57,7 +57,7 @@ class EmployeeController {
 
 	// Single item
 
-	@GetMapping("/employees/{id}")
+	@GetMapping("/employees/{idd}")
 	EntityModel<Employee> one(@PathVariable Long id) {
 
 		Employee employee = repository.findById(id) //
